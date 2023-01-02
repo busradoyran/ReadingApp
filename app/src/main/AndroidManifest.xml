@@ -12,10 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReadingApp"
         tools:targetApi="31">
-      <activity
+        <activity
+          android:name=".Favorites"
+          android:exported="false" />
+        <activity
+          android:name=".ProfileFragment"
+          android:exported="false" />
+        <activity
+          android:name=".HomeFragment"
+          android:exported="false" />
+        <activity
+          android:name=".MessageFragment"
+          android:exported="false" />
+        <activity
+          android:name=".NotificationFragment"
+          android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
-        <activity android:name=".LoginActivity"
+        <activity
+          android:name=".MainActivity3"
+          android:exported="false" />
+        <activity
+          android:name=".LoginActivity"
           android:exported="false" />
         <activity
             android:name=".MainActivity"
