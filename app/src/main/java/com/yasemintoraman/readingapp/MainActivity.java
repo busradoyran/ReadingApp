@@ -36,7 +36,24 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
     }
 
-    public void kayitOl(View view){
+    public void signUp(View view){
+        txtEmail = editEmail.getText().toString();
+        txtSifre = editPassword.getText().toString();
+
+        if(!TextUtils.isEmpty(txtEmail) && !TextUtils.isEmpty(txtSifre)){
+            mAuth.createUserWithEmailAndPassword(txtEmail,txtSifre)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
+                                Toast.makeText(MainActivity.this, "Registration Successful",Toast.LENGTH_SHORT).show();
+                            } else
+                                Toast.makeText(MainActivity.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }else
+            Toast.makeText(this,"Email and Password Cannot Be Empty", Toast.LENGTH_SHORT).show();
+
         Thread loginScreen = new Thread() {
             public void run() {
                 try {
@@ -55,27 +72,5 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         loginScreen.start();
-
-        // Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        // startActivity(intent);
-
-        txtEmail = editEmail.getText().toString();
-        txtSifre = editPassword.getText().toString();
-
-        if(!TextUtils.isEmpty(txtEmail) && !TextUtils.isEmpty(txtSifre)){
-            mAuth.createUserWithEmailAndPassword(txtEmail,txtSifre)
-                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful()){
-                                Toast.makeText(MainActivity.this, "Kayıt İşlemi Başarılı",Toast.LENGTH_SHORT).show();
-                            } else
-                                Toast.makeText(MainActivity.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-                        }
-                    });
-        }else
-            Toast.makeText(this,"Email ve Şifre Boş Olamaz", Toast.LENGTH_SHORT).show();
-
     }
-
 }
