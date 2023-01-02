@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <ImageButton
+      android:id="@+id/prev_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/back"
+      android:layout_weight="0.04"
+      android:onClick="PreviousScreen"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="Favorite Books"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:layout_weight="0.8"/>
+  </LinearLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:weightSum="1">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="169dp"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/gatsby" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/clap_when_you_land" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/invisibleman" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/the_light_beyond" />
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="169dp"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/the_godfather" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/red_dragon" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/two_towers" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/the_belljar" />
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="169dp"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/paolini" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/true_love" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/unnamed" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/year_of_the_witching" />
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="169dp"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/muscle" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/my_pinup"/>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/muscle"/>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.25"
+          android:paddingHorizontal="10dp"
+          android:src="@drawable/my_pinup"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification"
+    tools:context=".NotificationFragment">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:background="@color/notification"
+        android:padding="15dp"/>
+      <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile_photo"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Sarah Maxwell"
+            android:textColor="#425936"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_back_notification_rec"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:id="@+id/account_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_back_notification_rec"
+                android:padding="120dp"
+                android:src="@drawable/person" />
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/account_icon"
+                android:text="melissa17 liked your review about..."
+                android:textColor="#FFFFFF"
+                android:textStyle="normal" />
+            </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout
+            android:background="@drawable/round_back_notification_rec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/account_icon2"
+                android:background="@drawable/round_back_notification_rec"
+                android:src="@drawable/person"
+                android:padding="120dp"/>
+
+              <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="melissa17 liked your post"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_toEndOf="@+id/account_icon2"/>
+            </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout
+            android:background="@drawable/round_back_notification_rec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/account_icon3"
+                android:background="@drawable/round_back_notification_rec"
+                android:src="@drawable/person"
+                android:padding="120dp"/>
+
+              <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="melissa17 wants to follow you"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_toEndOf="@+id/account_icon3"/>
+            </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout
+            android:background="@drawable/round_back_notification_rec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/account_icon4"
+                android:background="@drawable/round_back_notification_rec"
+                android:src="@drawable/person"
+                android:padding="120dp"/>
+
+              <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="nathan_fabray mentioned in your post"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_toEndOf="@+id/account_icon4"/>
+            </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout
+            android:background="@drawable/round_back_notification_rec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/account_icon5"
+                android:background="@drawable/round_back_notification_rec"
+                android:src="@drawable/person"
+                android:padding="120dp"/>
+
+              <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="nathan_fabray has accepted your friendsh..."
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_toEndOf="@+id/account_icon5"/>
+            </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout
+            android:background="@drawable/round_back_notification_rec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/account_icon6"
+                android:background="@drawable/round_back_notification_rec"
+                android:src="@drawable/person"
+                android:padding="120dp"/>
+
+              <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="felix: i haven't read that book yet, it's in my ..."
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_toEndOf="@+id/account_icon6"/>
+            </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout
+            android:background="@drawable/round_back_notification_rec"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/account_icon7"
+                android:background="@drawable/round_back_notification_rec"
+                android:src="@drawable/person"
+                android:padding="120dp"/>
+
+              <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="felix: i heard that they're gonna make a mo..."
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_toEndOf="@+id/account_icon7"/>
+            </RelativeLayout>
+          </LinearLayout>
+        </LinearLayout>
+      </ScrollView>
+    </LinearLayout>
+</FrameLayout>

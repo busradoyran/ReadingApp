@@ -13,4 +13,17 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+  <color name="home">#1194AA</color>
+  <color name="messages">#C93790</color>
+  <color name="notification">#27AE0F</color>
+  <color name="profile">#5837B7</color>
+
+  <color name="home_20">#331194AA</color>
+  <color name="messages_20">#33C93790</color>
+  <color name="notification_20">#3327AE0F</color>
+  <color name="profile_20">#335837B7</color>
+
+  <color name="notification_rec">#2B7013</color>
+  <color name="messages_rec">#812C60</color>
+  <color name="profile_rec">#2196F3</color>
 </resources>
