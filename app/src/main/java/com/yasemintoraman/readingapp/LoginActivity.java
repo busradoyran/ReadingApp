@@ -1,4 +1,5 @@
 package com.yasemintoraman.readingapp;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -20,10 +21,10 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
 
-    private EditText editEmail, editPassword;
-    private String txtEmail, txtSifre;
-    private FirebaseAuth mAuth;
-    private FirebaseUser mUser;
+    public EditText editEmail, editPassword;
+    public String txtEmail, txtSifre;
+    public FirebaseAuth mAuth;
+    public FirebaseUser mUser;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -60,8 +61,8 @@ public class LoginActivity extends AppCompatActivity {
         Thread homeScreen = new Thread() {
             public void run() {
                 try {
-                    sleep(6000);
-                    //6 saniye sonunda class davet et.
+                    sleep(5000);
+                    //After 6 seconds class is called
                     startActivity(new Intent(getApplicationContext(), MainActivity3.class));
                 }
                 catch (InterruptedException e)
@@ -76,8 +77,6 @@ public class LoginActivity extends AppCompatActivity {
         };
         homeScreen.start();
     }
-
-
 
     public void signUpScreen(View view){
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
